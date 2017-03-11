@@ -40,6 +40,7 @@ public class UserController {
     @RequestMapping(value = "setName")
     public String setName(@ModelAttribute("nameSelect") String name){
         this.nameSelect=name;
+        this.begin=0;
         return "redirect:/usersList";
     }
 
